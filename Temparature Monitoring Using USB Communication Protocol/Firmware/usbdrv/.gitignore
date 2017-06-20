@@ -1,0 +1,4 @@
+#igonre files with *.o *.hex *.elf extentions
+*.o
+*.hex
+*.elf
