@@ -1,3 +1,2 @@
+#ignore all *.o files
 *.o
-*.hex
-*.elf
