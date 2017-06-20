@@ -136,6 +136,8 @@ void getTemparature(uchar *temparature){
 
 int main() {
 	
+	uchar i;
+	
     wdt_enable(WDTO_1S); // enable 1s watchdog timer
 	
 	FAN_DDR = 1;
