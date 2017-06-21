@@ -3,11 +3,11 @@ CC = avr-gcc
 OBJCOPY = avr-objcopy
 DUDE = avrdude
 
-# If you are not using ATmega8 and the ISPMKII programmer, 
+# If you are not using ATmega328p and the ISPMKII programmer, 
 # update the lines below to match your configuration
-CFLAGS = -Wall -Os -Iusbdrv -mmcu=atmega8
+CFLAGS = -Wall -Os -Iusbdrv -mmcu=atmega328p
 OBJFLAGS = -j .text -j .data -O ihex
-DUDEFLAGS = -p atmega8 -c avrispmkII -P usb -v
+DUDEFLAGS = -p atmega328p -c avrispmkII -P usb -v
 
 # Object files for the firmware (usbdrv/oddebug.o not strictly needed I think)
 OBJECTS = usbdrv/usbdrv.o usbdrv/oddebug.o usbdrv/usbdrvasm.o main.o
